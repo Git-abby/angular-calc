@@ -36,6 +36,7 @@
     block-size: 70px;
     margin: 0.25rem;
     border-radius: 40px;
+    cursor: pointer;
   }
   .calculator__key:active,
   .calculator__key:focus {
