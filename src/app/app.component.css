@@ -1,0 +1,138 @@
+/* Container styles */
+.container {
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox */
+  flex-direction: column;
+  row-gap: 3rem;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  background-color: #111; /* Background color for the container */
+}
+
+.animated-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: rgba(255,255,255,0.6);
+}
+.animated-text span{
+    position: relative;
+}
+.animated-text span::after{
+    content: "Ooops";
+    color: red;
+    animation: words 20s infinite;
+}
+
+.animated-text span::before{
+    content: '';
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #111;
+    border-left: 2px solid red;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+@keyframes words  {
+    0%,20%{
+        content: "Oooops";
+    }
+    21%,40%{
+        content: "Error";
+    }
+    41%,60%{
+        content: "Solved?";
+    }
+    61%,80%{
+        content: "Issueee";
+    }
+    81%,100%{
+        content: "404 External";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255,255,255,0.8);
+
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
