@@ -1,27 +1,98 @@
-# AngularCalc
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+# 🧮 Angular Calculator
 
-## Development server
+> A lightweight, responsive calculator built with Angular. Ideal for basic arithmetic operations and optimized for both desktop and mobile users.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![GitHub Repo stars](https://img.shields.io/github/stars/Git-abby/angular-calc?style=social) ![GitHub forks](https://img.shields.io/github/forks/Git-abby/angular-calc?style=social)
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Features
+- ✅ **Basic Arithmetic**: Addition, Subtraction, Multiplication, Division.
+- 📱 **Responsive Design**: Works smoothly on both desktop and mobile.
+- 🔄 **Real-time Calculation Display**: Instant results without reloading.
+- 🛠️ **Error Handling**: Friendly messages for invalid operations.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## ⚙️ Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Follow these steps to get a local copy up and running:
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Make sure you have the following installed:
 
-## Further help
+- **Node.js**: [Download](https://nodejs.org/)
+- **Angular CLI**: Install globally by running:
+  ```bash
+  npm install -g @angular/cli
+  ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Clone the Repository
+
+```bash
+git clone https://github.com/Git-abby/angular-calc.git
+cd angular-calc
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 🖥️ Usage
+
+To start the application locally:
+
+```bash
+ng serve
+```
+
+Then, open [http://localhost:4200](http://localhost:4200) to use the calculator.
+
+---
+
+## 🛠️ Technologies
+
+- **Angular**: Application framework
+- **Bootstrap**: For responsive styling
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here’s how you can help:
+
+1. **Fork the Project**
+2. **Create a Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit Changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to Branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+Feel free to create issues for bug reports or feature requests!
+
+---
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 🌟 Acknowledgements
+
+Special thanks to:
+
+- [Angular Documentation](https://angular.io/docs)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
+---
+
+Thank you for using **Angular Calculator**! If you enjoyed it, consider giving a ⭐ on GitHub!
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Git-abby/angular-calc?color=brightgreen) ![GitHub last commit](https://img.shields.io/github/last-commit/Git-abby/angular-calc)

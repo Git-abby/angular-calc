@@ -19,6 +19,9 @@
 .animated-text span{
     position: relative;
 }
+.animated-text span .git{
+    color: rgb(19, 86, 174);
+}
 .animated-text span::after{
     content: "Ooops";
     color: red;
