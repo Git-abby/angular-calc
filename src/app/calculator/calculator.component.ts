@@ -13,15 +13,28 @@ export class CalculatorComponent {
 
   //methods to take input from the keys
   to_get_keys(num: string) {
-  
+    // Prevent adding two operators in a row
+    if (
+      ['+', '-', '*', '/'].includes(num) &&
+      ['+', '-', '*', '/'].includes(this.stringToEval.slice(-1))
+    ) {
+      return;
+    }
     this.stringToEval = this.stringToEval + num;
-    console.log(this.stringToEval);
   }
   get_answer() {
     //condition for catching undefined stringToEval
-    if (this.stringToEval != '') {
-      this.stringToEval = eval(this.stringToEval);
-      console.log(this.stringToEval);
+    // if (this.stringToEval != '') {
+    //   this.stringToEval = eval(this.stringToEval);
+    //   console.log(this.stringToEval);
+    // }
+
+    if(this.stringToEval){
+      try{
+        this.stringToEval = eval(this.stringToEval).toString(); 
+      }catch(error){
+        this.stringToEval = "Error"
+      }
     }
   }
   clear_output() {

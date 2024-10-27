@@ -1,5 +1,5 @@
 <div class="calculator">
-  <div class="calculator__output">{{stringToEval ? stringToEval : "0"}}</div>
+  <div class="calculator__output">{{stringToEval || "0"}}</div>
   <div class="calculator__keys">
     <button
       class="calculator__key calculator__key--operator"
